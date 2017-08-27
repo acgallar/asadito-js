@@ -5,15 +5,13 @@
 <h1>Cantidad de Invitados</h1>
   <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %>
   <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %>
-  <%= text_field_tag 'niños', nil, placeholder: 'Cantidad de niños' %>
-  
+  <%= text_field_tag 'ninos', nil, placeholder: 'Cantidad de niños' %>
+
 
 
 <h1>Listado</h1>
 
-  <%= select_tag "Tipo de Carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
-  <%= select_tag "Tipo de Embutido", options_for_select(["Loganiza", "prieta", "ambos"]), {prompt: 'Seleccione tipo de embutido'} %>
+  <%= select_tag "carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
+  <%= submit_tag 'Enviar' %>
 
-
- <%= submit_tag 'Enviar' %>
 <% end %>
