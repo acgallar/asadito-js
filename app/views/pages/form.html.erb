@@ -1,17 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron headblock">
+					<%= image_tag 'fire', class: 'logo' %>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="row">
+			<div class="col-md-4 invitados rounded">
+				<%= form_tag(pages_calculo_path, method: :get) do %>
+
+				<h1 class="text-center">Cantidad de Invitados</h1>
+				<div class="inv"> <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %> </div>
+				<div class="inv"> <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %> </div>
+				<div class="inv"> <%= text_field_tag 'ninos', nil, placeholder: 'Cantidad de niños' %> </div>
+
+				<h1 class="text-center">Listado</h1>
+
+				<%= select_tag "carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
+				<%= submit_tag 'Enviar' %>
+
+				<% end %>	
+			</div>
+						<div class="col-md-4 invitados rounded">
+				<%= form_tag(pages_calculo_path, method: :get) do %>
+
+				<h1 class="text-center">Cantidad de Invitados</h1>
+				<div class="inv"> <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %> </div>
+				<div class="inv"> <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %> </div>
+				<div class="inv"> <%= text_field_tag 'ninos', nil, placeholder: 'Cantidad de niños' %> </div>
+
+				<h1 class="text-center">Listado</h1>
+
+				<%= select_tag "carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
+				<%= submit_tag 'Enviar' %>
+
+				<% end %>	
+			</div>
+						<div class="col-md-4 invitados rounded">
+				<%= form_tag(pages_calculo_path, method: :get) do %>
+
+				<h1 class="text-center">Cantidad de Invitados</h1>
+				<div class="inv"> <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %> </div>
+				<div class="inv"> <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %> </div>
+				<div class="inv"> <%= text_field_tag 'ninos', nil, placeholder: 'Cantidad de niños' %> </div>
+
+				<h1 class="text-center">Listado</h1>
+
+				<%= select_tag "carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
+				<%= submit_tag 'Enviar' %>
+
+				<% end %>	
+			</div>
+		</div>
+
+		
+	</section>
 
 
-<%= form_tag(pages_calculo_path, method: :get) do %>
 
-<h1>Cantidad de Invitados</h1>
-  <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %>
-  <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %>
-  <%= text_field_tag 'ninos', nil, placeholder: 'Cantidad de niños' %>
+</body>
+</html>
 
-
-
-<h1>Listado</h1>
-
-  <%= select_tag "carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
-  <%= submit_tag 'Enviar' %>
-
-<% end %>
