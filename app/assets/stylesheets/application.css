@@ -1,10 +1,26 @@
+/*
+*= require_tree .
+*= require_self
+*/
+
+
+
+
+
+
 body{
 	font-family: 'Comfortaa', cursive;
 	background-color: #f6bf26;
+	font-size: 15px;
 }
 h1{
-	margin: 50px;
+	margin-bottom: 20px;
 }
+
+a:hover{
+	text-decoration: none;
+}
+
 .headblock{
 	margin-bottom: 0;
 	box-shadow: 19px 3px 10px #888888;
@@ -19,30 +35,49 @@ h1{
 	margin: 50px;
 }
 .inv{
-	margin: 20px;
+	margin-bottom: 20px;
 	text-align: center;
 	color: white;
 }
-.inv input{	
+.inv input, .inv select, input[type=submit]{	
 	border: solid black 2px;
 	background-color: transparent;
 	height: 50px;
-	width: 200px;
+	width: 230px;
 	text-align: center;
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
+input[type=submit], button {
+	background: #e84e0f;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+button {
+	padding:10px 20px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
 .logo{
-	text-align:center;
-	width: 30%;
+	width: 450px;
+	max-width: 80%;
+    margin: 0 auto;
+    display: block;
 }
-#calidad{
-	background-color: transparent;
-	border: none;
-	text-align: center;
-}
+
 .enviar{
 	background-color: transparent;
 	border: none;
 }
 
+.box-area {
+	margin-bottom: 20px;
+}
+#calidad{
+	    width: -webkit-fill-available;
+}
