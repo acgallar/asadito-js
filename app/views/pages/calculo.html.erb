@@ -1,7 +1,36 @@
-<h1>Resumen del cálculo</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<div>Total de invitados <%= @suma_invitados %></div>
-<div>Debes comprar <%= @carne_total %> kg de <%= @carne %> </div>
-<div>Debes comprar <%= @cerveza_total %> lts de <%= @cerveza %> </div>
+<%= render 'header' %>
 
-<div>El costo total de la carne es de <%= @precio_carne %> </div>
+	<section>
+	<div class="container">
+				<div class="row">
+					<div class="col-md-12 center">
+
+						<h1>Resumen del cálculo</h1>
+
+						<p>Estás preparando su asado:</p>
+
+						<div><i class="fa fa-users" aria-hidden="true"></i> Total de invitados <%= @suma_invitados %></div>
+
+						<div>Tendrás un asado <strong style="text-transform:uppercase;"><%= @calidad %></strong>, para esto deberás comprar: </div>
+
+						<div>Debes comprar <%= @carne_total %> kg de <%= @carne %> </div>
+						<div>El costo total de la carne es de <%= @precio_carne %> </div>
+
+
+						<div>Debes comprar <%= @cerveza_total %> lts de <%= @cerveza %> </div>
+
+
+					</div>
+
+				</div>
+	</div>
+			
+		
+	</section>
+
+
+</body>
+</html>
