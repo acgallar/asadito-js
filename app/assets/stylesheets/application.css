@@ -6,19 +6,16 @@ h1{
 	margin: 50px;
 }
 .headblock{
-	background-color: #121212;
 	margin-bottom: 0;
 	box-shadow: 19px 3px 10px #888888;
+	padding: 0;
 }
 
 .invitados{
-	background-color: #f6bf26;
 	height: 600px;
 }
 
 .listado{
-	background-image: 
-	height: 400px;
 	margin: 50px;
 }
 .inv{
@@ -36,6 +33,15 @@ h1{
 	border-bottom-right-radius: 10px;
 }
 .logo{
+	text-align:center;
 	width: 30%;
+}
+#calidad{
+	background-color: transparent;
+	border: none;
+}
+.enviar{
+	background-color: transparent;
+	border: none;
 }
 
