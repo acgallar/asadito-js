@@ -1,1 +1,19 @@
-<h1>Formulario inicial Invitados + Listado</h1>
+
+
+<%= form_tag(pages_calculo_path, method: :get) do %>
+
+<h1>Cantidad de Invitados</h1>
+  <%= text_field_tag 'hombres', nil, placeholder: 'Cantidad de hombres' %>
+  <%= text_field_tag 'mujeres', nil, placeholder: 'Cantidad de mujeres' %>
+  <%= text_field_tag 'niños', nil, placeholder: 'Cantidad de niños' %>
+  
+
+
+<h1>Listado</h1>
+
+  <%= select_tag "Tipo de Carne", options_for_select(["Lomo Vetado", "Lomo Liso", "Huachalomo"]), {prompt: 'Seleccione tipo de carne'} %>
+  <%= select_tag "Tipo de Embutido", options_for_select(["Loganiza", "prieta", "ambos"]), {prompt: 'Seleccione tipo de embutido'} %>
+
+
+ <%= submit_tag 'Enviar' %>
+<% end %>
