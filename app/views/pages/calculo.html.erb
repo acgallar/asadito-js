@@ -11,16 +11,36 @@
 						<h1>Resumen del cálculo</h1>
 
 						<p>Estás preparando su asado:</p>
+						
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<div> Total de invitados <%= @suma_invitados %></div>
 
-						<div><i class="fa fa-users" aria-hidden="true"></i> Total de invitados <%= @suma_invitados %></div>
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+						<div>Tendrás un asado <strong style="text-transform:uppercase;">
+						<%= @calidad %></strong>, para esto deberás comprar: </div>
 
-						<div>Tendrás un asado <strong style="text-transform:uppercase;"><%= @calidad %></strong>, para esto deberás comprar: </div>
+						<div>Debes comprar: 
 
-						<div>Debes comprar <%= @carne_total %> kg de <%= @carne %> </div>
-						<div>El costo total de la carne es de <%= @precio_carne %> </div>
+						<ul> 
+								<% if @carne!="" %>
+										<li><%= @carne_total.round(3) %> kg de <%= @carne %> </li>
+								<% end %>
+								
+								<% if @embutido!="" %>
+										<li><%= @embutido_total.round(3) %> kg de <%= @embutido %></li>
+								<% end %>
 
+								<% if @carbon!="" %>
+										<li><%= @carbon %> kg de Carbón</li>
+								<% end %>
 
-						<div>Debes comprar <%= @cerveza_total %> lts de <%= @cerveza %> </div>
+								<% if @pan!="" %>
+										<li><%= @pan %> unidades de Pan Marraqueta</li>
+								<% end %>
+
+						</ul>  
+						</div>
+						<div>El costo total de la carne es de <%= @precio_total.to_i %> </div>
 
 
 					</div>
