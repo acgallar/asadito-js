@@ -2,14 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-	font-family: 'Comfortaa', cursive;
-	background: url('<%= asset_path('fondo-asado.jpg') %>');
-	font-size: 15px;
-	text-shadow: 2px 2px #000;
-	color: #fff;
-}
-
 .hide_text{
 	display: none;
 	margin-bottom: 10px;
