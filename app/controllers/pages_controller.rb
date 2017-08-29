@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
 
   def calculo
-    @calidad_hash = [["Beca JUNAEB","t1"], ["EL yerno paga el asado","t2"], ["La guatona con moño","t3"], ["El arito de perla","t4"]].to_h.invert
+    @calidad_hash = [["Beca JUNAEB","t1"], ["Yerno sin Aguinaldo","t2"], ["Recién Pagado","t3"], ["Alexis Sánchez","t4"]].to_h.invert
 
     #Parámetros
     @ninos = params[:ninos].to_i

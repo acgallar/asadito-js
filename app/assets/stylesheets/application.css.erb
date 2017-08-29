@@ -5,8 +5,8 @@
 
 body{
 	font-family: 'Comfortaa', cursive;
-	background: url('<%= asset_path('fondo-asado.jpg') %>');
-	font-size: 15px;
+	background: url('<%= asset_path('fondo-asado-negro.jpg') %>');
+	font-size: 19px;
 	text-shadow: 2px 2px #000;
 	color: #fff;
 }
@@ -37,7 +37,7 @@ a:hover{
 	color: white;
 }
 .inv input, .inv select, input[type=submit]{	
-	border: solid #af7444 2px;
+	border: none;
 	height: 50px;
 	width: 100%;
 	text-align: center;
@@ -45,13 +45,14 @@ a:hover{
 	border-bottom-right-radius: 10px;
 	background: rgba(255, 255, 255, 0.76);
 	color: #000;
+	font-size: 15px;
 }
 
 input[type=submit], button {
 	background: #e84e0f;
     color: #fff;
     border: none;
-    margin: 0 auto;
+    margin: 15px auto;
     display: block;
 }
 
@@ -96,4 +97,40 @@ button {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #000;
+}
+
+footer {
+	background: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a{
+	color: ;
+}
+
+.footer-logo {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+}
+
+.flotante {
+	position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 10px;
+    text-shadow: none;
+}
+
+@media (max-width: 991px) {
+
+.flotante {
+	position: relative;
+	display: block;
+    background: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin: 10px auto;
+}
 }

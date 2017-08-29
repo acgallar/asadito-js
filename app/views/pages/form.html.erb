@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Hagamos un Asadito</title>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 <body>
@@ -33,12 +33,12 @@
 								</div>
 					</div>
 
-				<div class="inv"> <%= select_tag "calidad", options_for_select([["Beca JUNAEB $","t1"], ["EL yerno paga el asado $$","t2"], ["La guatona con moño $$$","t3"], ["El arito de perla $$$$","t4"]]), {prompt: 'Seleccione tipo de asado'} %></div>
+				<div class="inv"> <%= select_tag "calidad", options_for_select([["Presupuesto Beca JUNAEB $","t1"], ["Presupuesto Yerno sin Aguinaldo $$","t2"], ["Presupuesto Recién Pagado $$$","t3"], ["Presupuesto Alexis Sánchez $$$$","t4"]]), {prompt: '¿Cuál es tu presupuesto?'} %></div>
 
 
 
 				<div id="t1" class= "hide_text">
-				    Muchos hemos pasado por las penurias económicas de ser un estudiante de Educación Superior, incluso sin serlo. No por qué los piticlines nos falten, nos vamos a perder la oportunidad de compartir alrededor de una parrilla. <strong>Choripán</strong> con mayonesa nunca va a fallar.
+				    Muchos hemos pasado por las penurias económicas de ser un estudiante de Educación Superior, incluso sin serlo. No por qué los piticlines nos falten, nos vamos a perder la oportunidad de compartir alrededor de una parrilla. <strong>Choripán</strong> con pebre nunca va a fallar.
 				</div>
 
 				<div id="t2" class= "hide_text">
@@ -56,7 +56,11 @@
 
 				
 				<%= submit_tag 'Calcular Compras Asado', id: "btn_enviar_seleccion", class: 'enviar btn-enviar', disabled: "disabled"%>
-				<div class="text-center"><small id="completa-form">Complete los datos para continuar</small></div>
+				<div class="text-center">
+				<small id="completa-form">Complete los datos para continuar</small></div>
+
+				<div class="text-center">
+				<small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small></div>
 				<% end %>	
 				</div>
 			</div>
@@ -66,9 +70,6 @@
 
 		
 	</section>
-
-
-
 
 
 <script>
