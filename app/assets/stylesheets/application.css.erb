@@ -6,6 +6,7 @@
 body{
 	font-family: 'Comfortaa', cursive;
 	background: url('<%= asset_path('fondo-asado-negro.jpg') %>');
+	background-size: cover;
 	font-size: 19px;
 	text-shadow: 2px 2px #000;
 	color: #fff;
@@ -102,8 +103,9 @@ button {
 footer {
 	background: rgba(0, 0, 0, 1);
     font-size: 13px;
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
+
 }
 
 footer a{
@@ -116,21 +118,15 @@ footer a{
 	width: 150px;
 }
 
-.flotante {
-	position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 10px;
-    text-shadow: none;
-}
 
 @media (max-width: 991px) {
 
-.flotante {
-	position: relative;
-	display: block;
-    background: rgba(0, 0, 0, 1);
+footer {
     text-align: center;
-    margin: 10px auto;
+
+}
+
+.footer-logo {
+    margin-top: 20px;
 }
 }
