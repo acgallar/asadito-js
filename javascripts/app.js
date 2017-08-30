@@ -67,7 +67,13 @@ $(document).ready(function($) {
 	  $('#unidades-pan').html(pan);
 	  $('#precio-total').html(precio_total);
 
-	  $('#resultado').removeAttr('hidden');
+	  $('#form').slideUp("fast");
+	  $('#resultado').attr('hidden', false);
+	});
 
+	$('#volver').on('click', function() {
+		event.preventDefault();
+	  $('#form').slideDown("fast");
+	  $('#resultado').attr('hidden', true);
 	});
 });
