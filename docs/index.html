@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>¿Hagamos un Asadito?</title>
+
+  <!--RRSS META -->
+  <meta property="og:title" content="¿Hagamos un Asadito?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="images/fondo-asado-negro.jpg" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Site Style -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/edd1228540.js"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <img src="images/fire.png" class="logo" alt="Hagamos un Asadito - Calculadora de Asados">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 center">
+
+            <h1 class="text-center">¿Cuánto debo comprar para los asados de este 18'?</h1>
+
+            <p class="text-center">No te vuelvas mono calculando tu asado, te entregamos la herramienta perfecta para este Septiembre. Indique la cantidad de comensales y cómo anda el saldo en el banco.</p>
+
+
+            <h3 class="text-center">Cantidad de Invitados</h3>
+            <div class="row">
+
+              <div class="inv col-md-4">
+                <input type="number" name="hombres" id="hombres" placeholder="Cantidad de hombres"> 
+              </div>
+              <div class="inv col-md-4"> 
+                <input type="number" name="mujeres" id="mujeres" placeholder="Cantidad de mujeres"> 
+              </div>
+              <div class="inv col-md-4"> 
+                <input type="number" name="ninos" id="ninos" placeholder="Cantidad de niños"> 
+              </div>
+            </div>
+
+            <div class="inv"> 
+              <select name="calidad" id="calidad">
+                <option value="">¿Cuál es tu presupuesto?</option>
+                <option value="t1">Presupuesto Beca JUNAEB $</option>
+                <option value="t2">Presupuesto Yerno sin Aguinaldo $$</option>
+                <option value="t3">Presupuesto Recién Pagado $$$</option>
+                <option value="t4">Presupuesto Alexis Sánchez $$$$</option>
+              </select>
+            </div>
+
+
+
+            <div id="t1" class="hide_text" style="display: none;">
+              Muchos hemos pasado por las penurias económicas de ser un estudiante de Educación Superior, incluso sin serlo. No por qué los piticlines nos falten, nos vamos a perder la oportunidad de compartir alrededor de una parrilla. <strong>Choripán</strong> con pebre nunca va a fallar.
+            </div>
+
+            <div id="t2" class="hide_text" style="display: none;">
+              Se agradece el esfuerzo pero es conocido que el yerno no va a sacar lo mejor cuando se tiene que rajar. Una <strong>Sobrecostilla y Choripán</strong> siempre va a ser una buena relación precio/calidad, una razón más para querer al yerno además de aguantar a la/el hij@.
+            </div>
+
+            <div id="t3" class="hide_text" style="display: none;">
+              Cuando las cosas andas bien hay que mostrarlo y qué mejor que un asado para soltar la tarjeta de crédito y disfrutar con los amigos. <strong>Lomo Vetado y una buena Longaniza</strong> subirán el pelo a nuestra tradición. 
+            </div>
+
+            <div id="t4" class="hide_text" style="display: none;">
+              Todos de vez en cuando queremos tirar la casa por la ventana y creernos Alexis Sánchez por un rato. Nos podrán faltar los perros, pero nunca un buen corte de <strong>Wagyu y un choripán de primera</strong>
+            </div>
+
+            <button id="btn_enviar_seleccion" class="enviar btn-enviar" disabled="disabled">
+              Calcular Compras Asado
+            </button>
+
+            <div class="text-center">
+              <small id="completa-form">Complete los datos para continuar</small></div>
+
+              <div class="text-center">
+                <small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultado" hidden="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 center">
+
+              <h1>¿Qué tengo que comprar para mi asado?</h1>
+
+              <p>¡Qué buen asado que se nos viene!</p>
+
+              <div class="box-area">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <div> Total de invitados <span id="invitados"></span>
+                  <small>
+                    H:<span id="total-hombres"></span>
+                    M:<span id="total-mujeres"></span>
+                    N:<span id="total-ninos"></span>
+
+                  </small>
+                </div>
+              </div>
+
+              <div class="box-area">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <div>
+                  Tendrás un asado de <span id="tipo-asado"></span>, para esto deberás comprar: 
+
+                </div>
+
+                <div>
+
+                  <ul> 
+                    <li>
+                      <span id="kilos-carne"></span> kg de <span id="tipo-carne"></span> 
+                    </li>
+                    <li>
+                      <span id="kilos-embutido"></span> kg de <span id="tipo-embutido"></span> 
+                    </li>
+                    <li>
+                      <span id="kilos-carbon"></span> kg de Carbón</span> 
+                    </li>
+                    <li>
+                      <span id="unidades-pan"></span> unidades de Pan Marraqueta </span> 
+                    </li>
+                  </ul>  
+                </div>
+              </div>
+
+              <div class="box-area">
+                <div>
+                  El costo total del asado es de $ <span id="precio-total"></span> /
+                  <small>$<span id="precio-invitado"></span> por invitado</small>
+                </div>
+              </div>
+
+
+              <a href="#" id="volver">
+                <button>
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>Volver
+                </button>
+              </a>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              Sitio web desarrollado por Marisol Martínez, Javier Silva y Maximiliano Vilaza </br>
+              Alumnos de la Academia de Talentos Digitales <a href="https://www.desafiolatam.com" target="_blank">Desafío Latam</a>
+            </div>
+
+
+            <div class="col-md-2">
+             <a href="https://www.desafiolatam.com" target="_blank"> 
+               <img src="images/desafio-latam-logo-horizontal-blanco.png" class="footer-logo" alt="Desafío Latam">
+             </a>
+           </div>
+
+         </div>
+       </div>
+     </section>
+
+     <script src="javascripts/validacion.js"></script>
+     <script src="javascripts/app.js"></script>
+     
+   </body>
+   </html>
