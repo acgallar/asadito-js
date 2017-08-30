@@ -6,7 +6,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 <body>
-	<%= render 'header' %>
+	
+	<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div>
+					<%= image_tag 'fire.png', class: 'logo' %>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
 	<section>
 
 		<div class="container">
@@ -80,13 +91,23 @@ $(document).on("turbolinks:load",
     	text3 = $('#ninos')
     	select1 = $('#calidad')
     	$("#form_seleccion_asado").change(function(){
-	    	if (text1.val() != "" && text2.val() != "" && text3.val() != "" && select1.val() != "" ) {
+    		if (text1.val() + text2.val() + text3.val() <= 0 ){
+	    		$("#btn_enviar_seleccion").addClass("btn-enviar");
+	    		$("#btn_enviar_seleccion").attr("disabled");
+	    		$("#completa-form").html('Complete con información válida');
+	    		$("#completa-form").show();
+
+	    	}
+	    	else if (text1.val() != "" && text2.val() != "" && text3.val() != "" && select1.val() != "" ) {
 	    		$("#btn_enviar_seleccion").removeClass("btn-enviar");
 	    		$("#btn_enviar_seleccion").removeAttr("disabled");
 	    		$("#completa-form").hide();
-	    	}else{
+	    	}
+	    
+	    	else{
 	    		$("#btn_enviar_seleccion").addClass("btn-enviar");
 	    		$("#btn_enviar_seleccion").attr("disabled");
+	    		$("#completa-form").html('Complete los datos para continuar');
 	    		$("#completa-form").show();
 	    	}   		
     	});
@@ -98,6 +119,18 @@ $(document).on("turbolinks:load",
                 $("#" + this.value).show();
             });
         $("#language").change();
+
+        $('#btn_enviar_seleccion').click(function(e){
+        	e.preventDefault()
+        	if (text1.val() < 0){
+        	text1.val(0) ; }
+        	if (text2.val() < 0){
+        	text2.val(0) ; }
+        	if (text3.val() < 0){
+        	text3.val(0) ; }
+        	$("#form_seleccion_asado").submit();
+
+        });
     });
     </script>
 

@@ -5,7 +5,7 @@
 
 body{
 	font-family: 'Comfortaa', cursive;
-	background: url('<%= asset_path('fondo-asado-negro.jpg') %>');
+	background: url('../images/fondo-asado-negro.jpg');
 	background-size: cover;
 	font-size: 19px;
 	text-shadow: 2px 2px #000;
@@ -100,7 +100,26 @@ button {
   color: #000;
 }
 
-footer {
+.hide_text{
+	display: none;
+	margin-bottom: 10px;
+}
+
+.hide_text strong {
+	color: #e84e0f;
+}
+
+.btn-enviar{
+	opacity: 0.4;
+}
+
+#tipo-asado {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+#footer {
 	background: rgba(0, 0, 0, 1);
     font-size: 13px;
     text-align: left;
@@ -108,7 +127,7 @@ footer {
 
 }
 
-footer a{
+#footer a{
 	color: #a03412;
 }
 
@@ -121,7 +140,7 @@ footer a{
 
 @media (max-width: 991px) {
 
-footer {
+#footer {
     text-align: center;
 
 }

@@ -1,6 +1,3 @@
-class PagesController < ApplicationController
-  def form
-  end
 
   def calculo
     @calidad_hash = [["Beca JUNAEB","t1"], ["Yerno sin Aguinaldo","t2"], ["Recién Pagado","t3"], ["Alexis Sánchez","t4"]].to_h.invert
@@ -49,7 +46,7 @@ class PagesController < ApplicationController
         @precio_carne = @carne_total*20000
         @carne = "Wagyu"
         @precio_embutido = @embutido_total*7000
-        @embutido = "Longaniza Llanquigue"
+        @embutido = "Longaniza Llanquihue"
 
     end
 
