@@ -32,7 +32,7 @@ a:hover{
 	text-align: center;
 	color: white;
 }
-.inv input, .inv select, input[type=submit]{	
+.inv input, .inv select, input[type=submit], #btn_enviar_seleccion{	
 	border: none;
 	height: 50px;
 	width: 100%;
@@ -44,7 +44,7 @@ a:hover{
 	font-size: 15px;
 }
 
-input[type=submit], button {
+input[type=submit], button, #btn_enviar_seleccion {
 	background: #e84e0f;
     color: #fff;
     border: none;
@@ -52,8 +52,8 @@ input[type=submit], button {
     display: block;
 }
 
-button {
-	padding:10px 20px;
+button, #btn_enviar_seleccion {
+	line-height: 50px;
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }

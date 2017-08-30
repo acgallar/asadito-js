@@ -1,13 +1,16 @@
 $(document).ready(
     function() {
-      text1 = $('#hombres')
-      text2 = $('#mujeres')
-      text3 = $('#ninos')
-      select1 = $('#calidad')
-      $("#form_seleccion_asado").change(function(){
-        if (text1.val() + text2.val() + text3.val() <= 0 ){
+      var text1 = $('#hombres');
+      var text2 = $('#mujeres');
+      var text3 = $('#ninos');
+      var select1 = $('#calidad');
+
+
+      $("#form").change(function(){
+
+        if ((text1.val() + text2.val() + text3.val() <= 0) || text1.val() < 0 || text2.val() < 0 || text3.val() < 0 ){
           $("#btn_enviar_seleccion").addClass("btn-enviar");
-          $("#btn_enviar_seleccion").attr("disabled");
+          $("#btn_enviar_seleccion").prop("disabled", true);
           $("#completa-form").html('Complete con información válida');
           $("#completa-form").show();
 
@@ -20,7 +23,7 @@ $(document).ready(
       
         else{
           $("#btn_enviar_seleccion").addClass("btn-enviar");
-          $("#btn_enviar_seleccion").attr("disabled");
+          $("#btn_enviar_seleccion").prop("disabled", true);
           $("#completa-form").html('Complete los datos para continuar');
           $("#completa-form").show();
         }       
@@ -34,15 +37,4 @@ $(document).ready(
             });
         $("#language").change();
 
-        $('#btn_enviar_seleccion').click(function(e){
-          e.preventDefault()
-          if (text1.val() < 0){
-          text1.val(0) ; }
-          if (text2.val() < 0){
-          text2.val(0) ; }
-          if (text3.val() < 0){
-          text3.val(0) ; }
-          $("#form_seleccion_asado").submit();
-
-        });
     });
