@@ -43,6 +43,7 @@ $(document).ready(function($) {
 	      	$('#carne').show();
 	        var precio_carne = carne_total*20000;
 	        var carne = "Wagyu";
+	        var alt_carne = "Filete, Lomo Vetado Prémium y Angus."
 	        var precio_embutido = embutido_total*7000;
 	        var embutido = "Longaniza";
 	        break;
