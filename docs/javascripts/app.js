@@ -16,30 +16,35 @@ $(document).ready(function($) {
 	 switch (calidad) {
 	    case "t1":
 	        var precio_carne = carne_total*0;
-	        var carne = "";
+	        $('#carne').hide();
 	        var embutido_total = embutido_total*2;
 	        carbon = Math.round(embutido_total*3/5);
 	        pan = pan*2;
 	        var precio_embutido = embutido_total*3800;
-	        var embutido = "Chorizo San Jorge";
+	        var embutido = "Chorizo";
 	        break;
 	    case "t2":
+	     	 $('#carne').show();
 	        var precio_carne = carne_total*6400;
-	        var carne = "Sobrecostilla";
+	        var carne = "Sobrecostilla.";
+	        var alt_carne = "Pulpa de Cerdo, Abastero, Punta Picana y Asado Carnicero."
 	        var precio_embutido = embutido_total*3800;
-	        var embutido = "Chorizo San Jorge";
+	        var embutido = "Chorizo";
 	        break;
 	    case "t3":
+	      	$('#carne').show();
 	        var precio_carne = carne_total*9500;
 	        var carne = "Lomo Vetado";
+	        var alt_carne = "Lomo liso, Punta de Ganso y Tapa Barriga."
 	        var precio_embutido = embutido_total*5800;
-	        var embutido = "Chorizo La Preferida";
+	        var embutido = "Longaniza";
 	        break;
 	    case "t4":
+	      	$('#carne').show();
 	        var precio_carne = carne_total*20000;
 	        var carne = "Wagyu";
 	        var precio_embutido = embutido_total*7000;
-	        var embutido = "Longaniza Llanquihue";
+	        var embutido = "Longaniza";
 	        break;
 	  }
 
@@ -48,13 +53,19 @@ $(document).ready(function($) {
 	  var precio_total = precio_carne + precio_embutido + carbon * 2800 + pan/12 * 1200;
 
 	  var calidades = {
-	    t1: "Beca JUNAEB",
-	    t2: "Yerno sin Aguinaldo",
-	    t3: "Recién Pagado",
-	    t4: "Alexis Sánchez"
+	    t1: "Presupuesto $",
+	    t2: "Presupuesto $$",
+	    t3: "Presupuesto $$$",
+	    t4: "Presupuesto $$$$"
 	  }
 
 	  var tipo_asado = calidades[calidad]
+	  var precio_invitado = Math.round(precio_total / total_invitados);
+	  precio_total = numberWithCommas(Math.round(precio_total));
+	  precio_invitado = numberWithCommas(Math.round(precio_invitado));
+
+	  carne_total = (carne_total).toFixed(1);
+	  embutido_total = (embutido_total).toFixed(1);
 
 	  $('#invitados').html(total_invitados);
 	  $('#total-hombres').html(hombres);
@@ -63,9 +74,13 @@ $(document).ready(function($) {
 	  $('#tipo-asado').html(tipo_asado);
 	  $('#kilos-carne').html(carne_total);
 	  $('#kilos-embutido').html(embutido_total);
+	  $('#tipo-carne').html(carne);
+	  $('#alternativas-carne').html(alt_carne);
+	  $('#tipo-embutido').html(embutido);
 	  $('#kilos-carbon').html(carbon);
 	  $('#unidades-pan').html(pan);
 	  $('#precio-total').html(precio_total);
+	  $('#precio-invitado').html(precio_invitado);
 
 	  $('#form').slideUp("fast");
 	  $('#resultado').attr('hidden', false);
@@ -76,4 +91,7 @@ $(document).ready(function($) {
 	  $('#form').slideDown("fast");
 	  $('#resultado').attr('hidden', true);
 	});
+
+	function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
 });

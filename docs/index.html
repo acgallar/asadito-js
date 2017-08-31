@@ -34,18 +34,6 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div>
-            <img src="images/fire.png" class="logo" alt="Hagamos un Asadito - Calculadora de Asados">
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
   <section id="form">
     <div class="container">
       <div class="row">
@@ -53,7 +41,7 @@
 
             <h1 class="text-center">¿Cuánto debo comprar para los asados de este 18'?</h1>
 
-            <p class="text-center">No te vuelvas mono calculando tu asado, te entregamos la herramienta perfecta para este Septiembre. Indique la cantidad de comensales y cómo anda el saldo en el banco.</p>
+            <p class="text-center">No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta para estas Fiestas Patrias. Indica la cantidad de comensales y cuál es tu presupuesto.</p>
 
 
             <h3 class="text-center">Cantidad de Invitados</h3>
@@ -143,16 +131,18 @@
                 <div>
 
                   <ul> 
-                    <li>
+                    <li id="carne">
                       <span id="kilos-carne"></span> kg de <span id="tipo-carne"></span> 
+                      <br>
+                      <small>Alternativas: <span id="alternativas-carne"></span></small>
                     </li>
-                    <li>
+                    <li id="embutido">
                       <span id="kilos-embutido"></span> kg de <span id="tipo-embutido"></span> 
                     </li>
-                    <li>
+                    <li id="carbon">
                       <span id="kilos-carbon"></span> kg de Carbón</span> 
                     </li>
-                    <li>
+                    <li id="pan">
                       <span id="unidades-pan"></span> unidades de Pan Marraqueta </span> 
                     </li>
                   </ul>  
@@ -160,8 +150,9 @@
               </div>
 
               <div class="box-area">
+                <i class="fa fa-usd" aria-hidden="true"></i>
                 <div>
-                  El costo total del asado es de $ <span id="precio-total"></span> /
+                  El costo total del asado es de $<span id="precio-total"></span> /
                   <small>$<span id="precio-invitado"></span> por invitado</small>
                 </div>
               </div>
@@ -182,6 +173,18 @@
 
       </section>
 
+  <section id="logo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <img src="images/fire.png" class="logo" alt="Hagamos un Asadito - Calculadora de Asados">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
       <section id="footer">
         <div class="container">
           <div class="row">
@@ -200,6 +203,8 @@
          </div>
        </div>
      </section>
+
+
 
      <script src="javascripts/validacion.js"></script>
      <script src="javascripts/app.js"></script>
