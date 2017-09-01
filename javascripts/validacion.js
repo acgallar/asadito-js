@@ -37,4 +37,18 @@ $(document).ready(
             });
         $("#language").change();
 
+
+      if ( text1.val() < 0 ){
+        text1.val() = 0
+      }
+      
+       if ( text2.val() < 0 ){
+        text2.val() = 0
+      }
+
+       if ( text3.val() < 0 ){
+        text3.val() = 0
+      }
+
+
     });
