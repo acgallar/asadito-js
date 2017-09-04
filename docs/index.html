@@ -7,10 +7,29 @@
   <meta property="og:title" content="¿Hagamos un Asadito?" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="#" />
-  <meta property="og:image" content="images/fondo-asado-negro.jpg" />
+  <meta property="og:image" content="images/ban-asaito.jpg" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -39,7 +58,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2 center">
 
-            <h1 class="text-center">¿Cuánto debo comprar para los asados de este 18'?</h1>
+            <h1 class="text-center">¿Cuánto debo comprar para los asados de este 18?</h1>
 
             <p class="text-center">No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta para estas Fiestas Patrias. Indica la cantidad de comensales y cuál es tu presupuesto.</p>
 
@@ -103,7 +122,7 @@
       <section id="resultado" hidden="true">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 center">
+            <div class="col-md-8 col-md-offset-2">
 
               <h1>¿Qué tengo que comprar para mi asado?</h1>
 
@@ -155,6 +174,11 @@
                   El costo total del asado es de $<span id="precio-total"></span> /
                   <small>$<span id="precio-invitado"></span> por invitado</small>
                 </div>
+                </br>
+
+                <div>
+                <small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small>
+                </div>
               </div>
 
 
@@ -205,9 +229,10 @@
      </section>
 
 
-
+     <script src="javascripts/enter.js"></script>
      <script src="javascripts/validacion.js"></script>
      <script src="javascripts/app.js"></script>
-     
+
+       
    </body>
    </html>
