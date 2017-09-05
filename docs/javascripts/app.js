@@ -1,6 +1,5 @@
 $(document).ready(function($) {
 	$('#btn_enviar_seleccion').on('click', function(){
-	 event.preventDefault();
 	 var hombres = parseInt($('#hombres').val());
 	 var mujeres = parseInt($('#mujeres').val());
 	 var ninos = parseInt($('#ninos').val());
@@ -85,12 +84,14 @@ $(document).ready(function($) {
 
 	  $('#form').slideUp("fast");
 	  $('#resultado').attr('hidden', false);
+
+	  return false;
 	});
 
 	$('#volver').on('click', function() {
-		event.preventDefault();
 	  $('#form').slideDown("fast");
 	  $('#resultado').attr('hidden', true);
+	  return false;
 	});
 
 	function numberWithCommas(x) {
