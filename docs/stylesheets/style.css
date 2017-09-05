@@ -122,6 +122,17 @@ button, #btn_enviar_seleccion {
 	font-weight: 700;
 }
 
+#comparte{
+	font-size: 25px;
+}
+
+#comparte a{
+	color: #fff;
+}
+
+#comparte a:hover{
+	color: #e84e0f;
+}
 
 #footer {
 	background: rgba(0, 0, 0, 1);
