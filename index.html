@@ -62,31 +62,54 @@
 </head>
 
 <body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="top-menu">
+          Comparte: 
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//calculatuasado.cl/">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+
+          <a href="https://twitter.com/home?status=%C2%BFVieron%20esta%20gran%20herramienta%20para%20calcular%20asados?%20http%3A//calculatuasado.cl/">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+
+         <a href="mailto:?&subject=¡Mira esta calculadora de Asado!&body=Encontr%C3%A9%20esta%20gran%20herramienta%20para%20el%2018%20%3Ca%20href=%22http%3A//calculatuasado.cl/%22%3Ehttp%3A//calculatuasado.cl/%3C/a%3E">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </div>
+      <div class="col-md-3">
+        <img src="./images/logo.png" alt="Calcula Tu Asado" class="img-responsive">
+      </div>
+      <div class="col-md-9">
+            <h1>¿Cuánto debo comprar para el asado?</h1>
+
+            <p>No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta. Indica la cantidad de comensales y cuál es tu presupuesto.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
   <section id="form">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 center">
+        <div class="col-md-12">
 
-            <h1 class="text-center">¿Cuánto debo comprar para el asado?</h1>
-
-            <p class="text-center">No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta. Indica la cantidad de comensales y cuál es tu presupuesto.</p>
-
-
-            <h3 class="text-center">Cantidad de Invitados</h3>
             <div class="row">
 
-              <div class="inv col-md-4">
-                <input type="number" name="hombres" id="hombres" placeholder="Cantidad de hombres"> 
-              </div>
-              <div class="inv col-md-4"> 
-                <input type="number" name="mujeres" id="mujeres" placeholder="Cantidad de mujeres"> 
-              </div>
-              <div class="inv col-md-4"> 
-                <input type="number" name="ninos" id="ninos" placeholder="Cantidad de niños"> 
-              </div>
-            </div>
+              <div class="inv col-md-6">
+                <h3>¿Cuantos invitados tendrás?</h3>
+                <p>Cantidad de buenos para el diente</p>
+                <input type="number" name="hombres" id="hombres" placeholder="Cantidad de Buenos para el Diente"> 
 
-            <div class="inv"> 
+
+                <p>Cantidad de consumidores moderados</p>
+                <input type="number" name="mujeres" id="mujeres" placeholder="Cantidad de consumidores moderados"> 
+
+
+                <p>Cantidad de niños</p>
+                <input type="number" name="ninos" id="ninos" placeholder="Cantidad de niños"> 
+             
+              <p>¿Cuál es tu presupuesto</p>
               <select name="calidad" id="calidad">
                 <option value="">¿Cuál es tu presupuesto?</option>
                 <option value="t1">Presupuesto $</option>
@@ -94,11 +117,8 @@
                 <option value="t3">Presupuesto $$$</option>
                 <option value="t4">Presupuesto $$$$</option>
               </select>
-            </div>
 
-
-
-            <div id="t1" class="hide_text" style="display: none;">
+              <div id="t1" class="hide_text" style="display: none;">
              Este presupuesto considera sólo <strong>Choripán</strong>
             </div>
 
@@ -118,11 +138,24 @@
               Calcular Compras Asado
             </button>
 
-            <div class="text-center">
+            <div>
               <small id="completa-form">Complete los datos para continuar</small></div>
 
-              <div class="text-center">
+              <div>
                 <small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small></div>
+
+            </div>
+
+            <div class="col-md-4 col-md-offset-2">
+              <div class="banner-area">
+                <a href="https://kanka.cl/collections/newest-products/products/asador-kanka" target="_blank">
+                  <img src="./images/kanka-oferta.gif" alt="" class="img-responsive">
+                </a>
+               </div>
+            </div>
+
+           </div>
+            
             </div>
           </div>
         </div>
@@ -141,9 +174,9 @@
                 <i class="fa fa-users" aria-hidden="true"></i>
                 <div> Total de invitados <span id="invitados"></span>
                   <small>
-                    H:<span id="total-hombres"></span>
+                    XL:<span id="total-hombres"></span>
                     M:<span id="total-mujeres"></span>
-                    N:<span id="total-ninos"></span>
+                    S:<span id="total-ninos"></span>
 
                   </small>
                 </div>
@@ -211,7 +244,9 @@
       <div class="row">
         <div class="col-md-12">
           <div>
-            <img src="images/fire.png" class="logo" alt="Hagamos un Asadito - Calculadora de Asados">
+            <a href="https://desafiolatam.com" target="_blank">
+               <img src="http://blog.desafiolatam.com/wp-content/uploads/2017/06/giphy-1.gif" class="logo" alt="Desafío Latam">
+            </a>
           </div>
         </div>
       </div>
@@ -219,31 +254,11 @@
   </section>
 
 
-  <section id="comparte">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          Comparte: 
-          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//calculatuasado.cl/">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-
-          <a href="https://twitter.com/home?status=%C2%BFVieron%20esta%20gran%20herramienta%20para%20calcular%20asados?%20http%3A//calculatuasado.cl/">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-
-         <a href="mailto:?&subject=¡Mira esta calculadora de Asado!&body=Encontr%C3%A9%20esta%20gran%20herramienta%20para%20el%2018%20%3Ca%20href=%22http%3A//calculatuasado.cl/%22%3Ehttp%3A//calculatuasado.cl/%3C/a%3E">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-
       <section id="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-10">
-              Sitio web desarrollado por Marisol Martínez, Javier Silva y Maximiliano Vilaza </br>
-              Alumnos de la Academia de Talentos Digitales <a href="https://www.desafiolatam.com" target="_blank">Desafío Latam</a>
+              Sitio web desarrollado por alumnos de la Academia de Talentos Digitales <a href="https://www.desafiolatam.com" target="_blank">Desafío Latam</a>
             </div>
 
 
