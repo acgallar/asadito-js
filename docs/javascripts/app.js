@@ -24,7 +24,7 @@ $(document).ready(function($) {
 	        break;
 	    case "t2":
 	     	 $('#carne').show();
-	        var precio_carne = carne_total*6400;
+	        var precio_carne = carne_total*5490;
 	        var carne = "Sobrecostilla.";
 	        var alt_carne = "Pulpa de Cerdo, Abastero, Punta Picana y Asado Carnicero."
 	        var precio_embutido = embutido_total*3800;
@@ -32,7 +32,7 @@ $(document).ready(function($) {
 	        break;
 	    case "t3":
 	      	$('#carne').show();
-	        var precio_carne = carne_total*9500;
+	        var precio_carne = carne_total*8990;
 	        var carne = "Lomo Vetado";
 	        var alt_carne = "Lomo liso, Punta de Ganso y Tapa Barriga."
 	        var precio_embutido = embutido_total*5800;
@@ -40,8 +40,8 @@ $(document).ready(function($) {
 	        break;
 	    case "t4":
 	      	$('#carne').show();
-	        var precio_carne = carne_total*20000;
-	        var carne = "Wagyu";
+	        var precio_carne = carne_total*16990;
+	        var carne = "Punta Paleta Wagyu";
 	        var alt_carne = "Filete, Lomo Vetado Prémium y Angus."
 	        var precio_embutido = embutido_total*7000;
 	        var embutido = "Longaniza";
