@@ -65,21 +65,16 @@
 
 <header>
 
-  <div class="information-bar">
-    <div class="container">
-      <div class="row">
-        <span class="col-md-10">🇨🇱&nbsp;<strong>¿Quiéres hacer una aplicación como esta?</strong>🇨🇱 Estudia Programación en Academia Desafío Latam</span>
-        
-        
-        <div class="col-md-2">
-            <a href="https://desafiolatam.com" target="_blank" class="btn btn-danger">Ver Cursos</a>
-          </div>
-        
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: #3772FF;border-color: #3772FF;padding-top: 15px;padding-left: 20px;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <span>🇨🇱&nbsp;<strong>¿Quiéres hacer una aplicación como esta?</strong>&nbsp;🇨🇱 Estudia Programación en Academia Desafío Latam</span>
       </div>
-   </div>
-</div>
+      <div class="col-md-2" style="padding-left: 120px;padding-bottom: 10px;"><a href="https://desafiolatam.com" target="_blank" class="btn btn-danger">Ver Cursos</a></div>
+    </div>
+  </nav>
 
-  <div class="container">
+  <div class="container"  style="padding-top: 120px;">
     <div class="row">
       <div class="top-menu">
           Comparte: 
@@ -93,90 +88,87 @@
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           </a>
         </div>
-      <div class="col-md-3">
+      <div class="col-md-3" style="padding-bottom: 30px">
         <img src="./images/logo.png" alt="Calcula Tu Asado" class="img-responsive">
       </div>
-      <div class="col-md-9">
+      <div class="col-md-8">
             <h1>¿Cuánto debo comprar para el asado?</h1>
 
-            <p>No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta. Indica la cantidad de comensales y cuál es tu presupuesto.</p>
+            <p>No te vuelvas loco calculando tu asado, te entregamos la herramienta perfecta.<br>Indica la cantidad de comensales y cuál es tu presupuesto.</p>
       </div>
     </div>
   </div>
 </header>
 
-  <section id="form">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+<section id="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-            <div class="row">
+          <div class="row">
 
-              <div class="inv col-md-6">
-                <h3>¿Cuántos invitados tendrás?</h3>
-                <p>Completa el siguiente formulario con la información de los comensales</p>
-                <br>
-
-
-                <p>Cantidad de buenos para el diente</p>
-                <input type="number" name="hombres" id="hombres" placeholder="Cantidad de buenos para el diente"> 
+            <div class="inv col-md-6">
+              <h3>¿Cuántos invitados tendrás?</h3>
+              <p>Completa el siguiente formulario con la información de los comensales</p>
+              <br>
 
 
-                <p>Cantidad de consumidores moderados</p>
-                <input type="number" name="mujeres" id="mujeres" placeholder="Cantidad de consumidores moderados"> 
+              <p>Cantidad de buenos para el diente</p>
+              <input type="number" name="hombres" id="hombres" placeholder="Cantidad de buenos para el diente"> 
 
 
-                <p>Cantidad de niños</p>
-                <input type="number" name="ninos" id="ninos" placeholder="Cantidad de niños"> 
-             
-              <p>¿Cuál es tu presupuesto?</p>
-              <select name="calidad" id="calidad">
-                <option value="">¿Cuál es tu presupuesto?</option>
-                <option value="t1">Presupuesto $</option>
-                <option value="t2">Presupuesto $$</option>
-                <option value="t3">Presupuesto $$$</option>
-                <option value="t4">Presupuesto $$$$</option>
-              </select>
+              <p>Cantidad de consumidores moderados</p>
+              <input type="number" name="mujeres" id="mujeres" placeholder="Cantidad de consumidores moderados"> 
 
-              <div id="t1" class="hide_text" style="display: none;">
-             Este presupuesto considera sólo <strong>Choripán</strong>
-            </div>
 
-            <div id="t2" class="hide_text" style="display: none;">
-              Este presupuesto considera <strong>Sobrecostilla y Choripán</strong>
-            </div>
+              <p>Cantidad de niños</p>
+              <input type="number" name="ninos" id="ninos" placeholder="Cantidad de niños"> 
+           
+            <p>¿Cuál es tu presupuesto?</p>
+            <select name="calidad" id="calidad">
+              <option value="">¿Cuál es tu presupuesto?</option>
+              <option value="t1">Presupuesto $</option>
+              <option value="t2">Presupuesto $$</option>
+              <option value="t3">Presupuesto $$$</option>
+              <option value="t4">Presupuesto $$$$</option>
+            </select>
 
-            <div id="t3" class="hide_text" style="display: none;">
-            Este presupuesto considera <strong>Lomo Vetado y una buena Longaniza</strong>
-            </div>
+            <div id="t1" class="hide_text" style="display: none;">
+           Este presupuesto considera sólo <strong>Choripán</strong>
+          </div>
 
-            <div id="t4" class="hide_text" style="display: none;">
-              Este presupuesto considera <strong>Wagyu y un longaniza de primera</strong>
-            </div>
+          <div id="t2" class="hide_text" style="display: none;">
+            Este presupuesto considera <strong>Sobrecostilla y Choripán</strong>
+          </div>
 
-            <button id="btn_enviar_seleccion" class="enviar btn-enviar" disabled="disabled">
-              Calcular Compras Asado
-            </button>
+          <div id="t3" class="hide_text" style="display: none;">
+          Este presupuesto considera <strong>Lomo Vetado y una buena Longaniza</strong>
+          </div>
+
+          <div id="t4" class="hide_text" style="display: none;">
+            Este presupuesto considera <strong>Wagyu y un longaniza de primera</strong>
+          </div>
+
+          <button id="btn_enviar_seleccion" class="enviar btn-enviar" disabled="disabled">
+            Calcula tu Asado
+          </button>
+
+          <div>
+            <small id="completa-form">Complete los datos para continuar</small></div>
 
             <div>
-              <small id="completa-form">Complete los datos para continuar</small></div>
+              <small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small></div>
 
-              <div>
-                <small id="completa-form">*Los cálculos son en base a valores reales de precios de Supermercados en Chile</small></div>
+          </div>
 
+          <div class="row">
+            <div class="col-12 col-md-6">
+              
+               <a href="https://goo.gl/DA8GmQ" target="_blank">
+                  <img src="./images/banner-calcula-tu-asado.png" alt="banner" class="img-responsive" style="padding-left: 0px;padding-top: 125px;">
+                </a>
             </div>
-
-            <div class="col-md-4 col-md-offset-2">
-              <div class="banner-area">
-                <!--<a href="https://goo.gl/DA8GmQ" target="_blank">
-                  <img src="./images/kanka-oferta.gif" alt="" class="img-responsive">
-                </a>-->
-               </div>
-            </div>
-
-           </div>
-            
-            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -188,7 +180,7 @@
 
               <h1>¿Qué tengo que comprar para mi asado?</h1>
 
-              <p>¡Qué buen asado que se nos viene!</p>
+              <p>¡Que buen asado se nos viene!</p>
 
               <div class="box-area">
                 <i class="fa fa-users" aria-hidden="true"></i>
@@ -256,11 +248,9 @@
 
           </div>
         </div>
-
-
       </section>
 
-  <section id="logo">
+    <section id="logo">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -272,7 +262,7 @@
         </div>
       </div>
     </div>
-  </section>
+    </section>
 
 
       <section id="footer">
@@ -298,6 +288,6 @@
      <script src="javascripts/validacion.js"></script>
      <script src="javascripts/app.js"></script>
 
-       
-   </body>
-   </html>
+    </section>   
+  </body>
+</html>
