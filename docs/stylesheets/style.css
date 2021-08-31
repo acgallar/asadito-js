@@ -9,9 +9,9 @@ body{
 
 header {
     background: #1a1a18;
-    padding: 80px 0 50px;
+    padding: 20px 0 20px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -188,13 +188,10 @@ button, #btn_enviar_seleccion {
 	margin: 10px;
 }
 
-.information-bar {
-	background: #3772FF;
-    padding: 10px 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-bottom: 10px;
+
+
+.bton-curso {
+	padding-left: 50px;
 }
 
 .btn-danger {
@@ -213,11 +210,6 @@ button, #btn_enviar_seleccion {
     margin-top: 20px;
 }
 
-.information-bar {
-	display: none;
-}
 
-header {
-padding: 20px 0;
-}
-}
+
+
