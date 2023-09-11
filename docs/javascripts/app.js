@@ -19,20 +19,20 @@ $(document).ready(function($) {
 	        var embutido_total = embutido_total*2;
 	        carbon = Math.round(embutido_total*3/5);
 	        pan = pan*2;
-	        var precio_embutido = embutido_total*4200;
+	        var precio_embutido = embutido_total*5000;
 	        var embutido = "Chorizo";
 	        break;
 	    case "t2":
 	     	 $('#carne').show();
-	        var precio_carne = carne_total*7500;
+	        var precio_carne = carne_total*6000;
 	        var carne = "Sobrecostilla.";
 	        var alt_carne = "Pulpa de Cerdo, Abastero, Punta Picana y Asado Carnicero."
-	        var precio_embutido = embutido_total*4200;
+	        var precio_embutido = embutido_total*5000;
 	        var embutido = "Chorizo";
 	        break;
 	    case "t3":
 	      	$('#carne').show();
-	        var precio_carne = carne_total*15000;
+	        var precio_carne = carne_total*14500;
 	        var carne = "Lomo Vetado";
 	        var alt_carne = "Lomo liso, Punta de Ganso y Tapa Barriga."
 	        var precio_embutido = embutido_total*5800;
@@ -40,7 +40,7 @@ $(document).ready(function($) {
 	        break;
 	    case "t4":
 	      	$('#carne').show();
-	        var precio_carne = carne_total*29990;
+	        var precio_carne = carne_total*22000;
 	        var carne = "Punta Paleta Wagyu";
 	        var alt_carne = "Filete, Lomo Vetado Prémium y Angus."
 	        var precio_embutido = embutido_total*7000;
@@ -50,7 +50,7 @@ $(document).ready(function($) {
 
 	  if (carbon == 0) {carbon = 1};
 
-	  var precio_total = precio_carne + precio_embutido + carbon * 3200 + pan/12 * 1600;
+	  var precio_total = precio_carne + precio_embutido + carbon * 3200 + pan/12 * 1990;
 
 	  var calidades = {
 	    t1: "Presupuesto $",
